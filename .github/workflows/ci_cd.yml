@@ -31,7 +31,7 @@ jobs:
       ####
 
       - name: Lint Python code
-        run:
+        run: |
           if [ -f .flake8 ] || [ -f setup.cfg ] || [ -f tox.ini ] || [ -f .pep8 ]; then
           flake8 .
           else
